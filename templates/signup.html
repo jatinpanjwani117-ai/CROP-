@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Sign Up - AgriAI{% endblock %}
+{% block content %}
+<div class="row justify-content-center align-items-center" style="min-height:70vh;">
+  <div class="col-md-5">
+    <div class="card shadow p-4">
+      <h3 class="mb-4 text-center text-success">Create Your Account</h3>
+      {% if error %}<div class="alert alert-danger">{{error}}</div>{% endif %}
+      <form method="post" action="{{ url_for('signup') }}">
+        <div class="mb-3">
+          <label>Username</label>
+          <input type="text" name="username" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label>Password</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <button class="btn btn-success w-100" type="submit">Sign Up</button>
+      </form>
+      <hr>
+      <div class="text-center">
+        <a href="{{ url_for('login_page') }}" class="btn btn-outline-primary">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

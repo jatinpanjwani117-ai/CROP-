@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Crop Recommendation - AgriAI{% endblock %}
+{% block content %}
+<h2 class="mb-4 text-success">Crop Recommendation</h2>
+<form method="post" class="row g-3">
+  {% for f,lim in limits.items() %}
+  <div class="col-md-4">
+    <label class="form-label"><b>{{ f.title() }}</b> ({{ lim.min }} - {{ lim.max }})</label>
+    <input type="number" step="any" name="{{ f }}" required class="form-control" min="{{ lim.min }}" max="{{ lim.max }}">
+  </div>
+  {% endfor %}
+  <div class="col-12">
+    <button class="btn btn-success mt-3" type="submit">Get Recommendation</button>
+  </div>
+</form>
+{% if prediction %}
+<div class="alert alert-success mt-4">
+  <h4>Recommended Crop: <strong>{{ prediction }}</strong></h4>
+  <p>Your best scientifically predicted crop based on soil and weather conditions.</p>
+</div>
+{% endif %}
+{% if error %}
+<div class="alert alert-danger mt-4">{{ error }}</div>
+{% endif %}
+{% endblock %}

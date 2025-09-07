@@ -1,0 +1,112 @@
+/* Green Modern Theme for Crop Recommendation */
+body {
+  background: #f4fbf7;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+/* Navbar */
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 16px rgba(20, 160, 100, 0.05);
+  padding: 1rem 0;
+}
+.navbar-brand {
+  color: #1aa46c !important;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: #253238 !important;
+  font-weight: 500;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+.nav-link.active, .nav-link:hover {
+  color: #1aa46c !important;
+}
+/* Buttons */
+.btn-success, .btn-main {
+  background: linear-gradient(90deg, #1aa46c 40%, #39d98e 100%);
+  color: #fff;
+  border: none;
+  padding: 0.8em 2.2em;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(26,164,108,0.17);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.btn-success:hover, .btn-main:hover {
+  background: linear-gradient(90deg, #39d98e 20%, #1aa46c 80%);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(26,164,108,0.35);
+}
+/* Hero Section */
+.hero-section {
+  background: radial-gradient(ellipse at center, #1aa46c 0%, #39d98e 100%);
+  color: #fff;
+  padding: 3.5rem 2rem 4.2rem 2rem;
+  border-radius: 32px;
+  box-shadow: 0 12px 40px rgba(26,164,108,0.14);
+  margin: 2.5rem auto;
+  max-width: 730px;
+  text-align: center;
+  position: relative;
+}
+.hero-headline {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.hero-desc {
+  font-size: 1.1rem;
+  margin-bottom: 2.2rem;
+}
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(20,160,100,0.11);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 540px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+  box-shadow: 0 10px 44px rgba(20,160,100,0.22);
+  transform: translateY(-4px) scale(1.01);
+}
+/* Form Labels & Inputs */
+.form-label {
+  color: #1aa46c;
+  font-weight: bold;
+  margin-bottom: .35rem;
+  font-size: 1rem;
+}
+input[type="text"], input[type="password"], input[type="number"], textarea {
+  border: 1px solid #cff2e1;
+  border-radius: 13px;
+  padding: 0.6em 1em;
+  background: #f9fffc;
+  font-size: 1.05rem;
+  margin-bottom: .7rem;
+  width: 100%;
+  color: #253238;
+  resize: vertical;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1aa46c;
+  box-shadow: 0 0 0 2px #e3fce9;
+}
+/* Footer */
+footer {
+  background: #fff;
+  text-align: center;
+  color: #1aa46c;
+  padding: 1.2rem 0;
+  box-shadow: 0 -2px 20px rgba(20,160,100,0.07);
+  margin-top: 2.5rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
